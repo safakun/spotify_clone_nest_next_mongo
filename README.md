@@ -20,3 +20,12 @@ sudo docker compose up
 
 ```
 
+Nest file upload 
+
+https://docs.nestjs.com/techniques/file-upload 
+
+```bash
+npm i uuid
+```
+
+
