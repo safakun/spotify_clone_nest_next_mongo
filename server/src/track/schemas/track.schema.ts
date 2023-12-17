@@ -6,6 +6,9 @@ export type TrackDocument = HydratedDocument<Track>;
 
 @Schema()
 export class Track {
+  // @Prop({ auto: true })
+  // _id: mongoose.Types.ObjectId;
+
   @Prop()
   name: string;
 
