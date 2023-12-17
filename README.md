@@ -26,6 +26,12 @@ https://docs.nestjs.com/techniques/file-upload
 
 ```bash
 npm i uuid
+``` 
+Учим сервер раздавать статику
+https://docs.nestjs.com/recipes/serve-static
+```bash
+npm install --save @nestjs/serve-static
+
 ```
 
 
