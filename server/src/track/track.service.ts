@@ -23,8 +23,8 @@ export class TrackService {
         return track;
     }
 
-    async getAll(): Promise<Track[]> {
-       const tracks = this.trackModel.find();
+    async getAll(count = 10, offset = 0): Promise<Track[]> {
+       const tracks = this.trackModel.find().skip(Number(offset)).limit(Number(count));
        return tracks;
     }
 
