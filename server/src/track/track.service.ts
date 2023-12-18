@@ -28,6 +28,13 @@ export class TrackService {
        return tracks;
     }
 
+    async search(query: string): Promise<Track[]> {
+        const tracks = await this.trackModel.find({
+            name: {$regex: new RegExp(query)}
+        })
+        return tracks;
+    }
+
     async getOne(id: ObjectId): Promise<Track> {
         const track = this.trackModel.findById(id).populate('comments');
         return track;
