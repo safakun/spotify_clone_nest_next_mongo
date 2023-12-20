@@ -1,4 +1,10 @@
+.main_container {
+    margin: 90px 0;
+}
 
+.card {
+    width: 900px;
+}
 .center {
     margin-top: 150px;
     display: flex;
