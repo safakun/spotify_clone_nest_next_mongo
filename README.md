@@ -32,6 +32,17 @@ https://docs.nestjs.com/recipes/serve-static
 ```bash
 npm install --save @nestjs/serve-static
 
-```
+``` 
 
+# Клиентская часть
+### NextJs 
+
+```bash
+npx create-next-app client
+```
+Install material-ui 
+```
+npm install @mui/material @emotion/react @emotion/styled
+npm install @mui/icons-material
+```
 
