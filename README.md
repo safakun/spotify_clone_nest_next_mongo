@@ -1,7 +1,7 @@
 ### Spotify Clone Nest + Next + MOngo 
 https://www.youtube.com/watch?v=A0CfYSVzAZI 
 
-30 mins
+1 h 8 mins
 
 Устанавливаем Nest 
 ```bash
