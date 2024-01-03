@@ -19,7 +19,7 @@ const StepWrapper: React.FC<StepWrapperProps> = ({ activeStep, children }) => {
                 <StepLabel>
                     {step}
                 </StepLabel>
-                {/* {children} */}
+             
             </Step>
             )}
       </Stepper>

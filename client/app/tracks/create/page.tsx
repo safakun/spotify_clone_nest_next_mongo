@@ -3,7 +3,8 @@
 import React, { useState } from 'react'
 import Mainlayout from '../../layouts/MainLayout'
 import StepWrapper from '@/app/compnents/StepWrapper'
-import { Button, Grid } from '@mui/material'
+import { Button, Grid, TextField } from '@mui/material'
+import FileUpload from '@/app/compnents/FileUpload'
 
 const create = () => {
 
@@ -22,13 +23,31 @@ const create = () => {
   return (
     <Mainlayout>
       <StepWrapper activeStep={activeStep}>
-        { activeStep === 1 &&
-        <h1>STEP 1 </h1>
+        { activeStep === 0 &&
+        <Grid container direction='column' className='stepsitem'>
+          <TextField 
+          label={'Track name'}
+          className='trackinput'
+          />
+           <TextField 
+          label={'Track author name'}
+          className='trackinput'
+          /> 
+           <TextField 
+          label={'Track text'}
+          className='trackinput'
+          multiline
+          rows={3}
+          />
+        </Grid>
+       
         }    
-        { activeStep === 2 &&
-        <h1>STEP 2 </h1>
+        { activeStep === 1 &&
+        <FileUpload file={''} setFile={() => ({})} accept="image/*">
+          <Button>Upload track image</Button>
+          </FileUpload>
         }   
-        { activeStep === 3 &&
+        { activeStep === 2 &&
         <h1>STEP 3 </h1>
         }   
       </StepWrapper>
