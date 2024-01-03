@@ -1,3 +1,5 @@
+"use client"
+
 import { Container, Step, StepLabel, Stepper, Grid, Card } from '@mui/material';
 import React from 'react'
 
