@@ -1,9 +1,20 @@
 import React from 'react'
 
-const TrackProgress = () => {
+interface TrackProgressProps {
+  left: number;
+  right: number;
+  onChange: (e: any) => void;
+}
+
+const TrackProgress: React.FC<TrackProgressProps> = ({
+  left, right, onChange
+}) => {
+
+
   return (
-    <div>
-      
+    <div className='playerprogressbar'>
+      <input type="range" />
+      <div>{left} / {right}</div>
     </div>
   )
 }
