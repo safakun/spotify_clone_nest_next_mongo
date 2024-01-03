@@ -26,3 +26,12 @@
         margin-left: 5% !important;
     }
 }
+
+.steps {
+    margin: 70px 0;
+    height: 270px;
+}
+
+.stepscard {
+    width: 600px;
+}
