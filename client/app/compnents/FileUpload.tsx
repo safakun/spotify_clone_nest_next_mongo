@@ -7,12 +7,14 @@ interface FileAuploadProps {
     children: any;
 }
 
-const FileUpload: React.FC<FileAuploadProps> = ({file, setFile, accept, children}) => {
+const FileUpload: React.FC<FileAuploadProps> = ({setFile, accept, children}) => {
 
   const ref = useRef<HTMLInputElement>(null) 
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(e.target.files)
+   // console.log(e.target.files)
+   if (!e.target.files) return;
+    setFile(e.target.files[0]) 
   }
 
   return (

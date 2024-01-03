@@ -10,6 +10,9 @@ const create = () => {
 
   const [activeStep, setActiveStep] = useState(0)
 
+  const [picture, setPicture] = useState(null)
+  const [audio, setAudio] = useState(null)
+
   const back = () => {
     setActiveStep(prev => prev - 1)
   }
@@ -43,12 +46,14 @@ const create = () => {
        
         }    
         { activeStep === 1 &&
-        <FileUpload file={''} setFile={() => ({})} accept="image/*">
+        <FileUpload file={''} setFile={setPicture} accept="image/*">
           <Button>Upload track image</Button>
           </FileUpload>
         }   
         { activeStep === 2 &&
-        <h1>STEP 3 </h1>
+          <FileUpload file={''} setFile={setAudio} accept="audio/*">
+          <Button>Upload track audio</Button>
+          </FileUpload>
         }   
       </StepWrapper>
      <Grid container justifyContent={'space-between'}>
