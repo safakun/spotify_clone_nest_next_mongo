@@ -1,5 +1,5 @@
 "use client"
-import { Pause, PlayArrow } from '@mui/icons-material'
+import { Pause, PlayArrow, VolumeUp } from '@mui/icons-material'
 import { IconButton, Grid } from '@mui/material'
 import React from 'react'
 import styles from '../styles/Player.module.css'
@@ -27,6 +27,8 @@ const Player = () => {
             {track.artist}
           </div>
         </Grid>
+        <TrackProgress left={0} right={100} onChange={() => ({})} />
+        <VolumeUp className='volumeup' />
         <TrackProgress left={0} right={100} onChange={() => ({})} />
     </div>
   )

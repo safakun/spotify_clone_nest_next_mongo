@@ -46,3 +46,6 @@ npm install @mui/material @emotion/react @emotion/styled
 npm install @mui/icons-material
 ```
 
+```bash
+npm i react-redux redux redux-thunk @types/react-redux next-redux-wrapper
+```

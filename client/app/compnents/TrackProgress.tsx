@@ -13,7 +13,13 @@ const TrackProgress: React.FC<TrackProgressProps> = ({
 
   return (
     <div className='playerprogressbar'>
-      <input type="range" />
+      <input
+      type="range"
+      min={left}
+      max={right}
+      value={left}
+      onChange={onChange}
+      />
       <div>{left} / {right}</div>
     </div>
   )
