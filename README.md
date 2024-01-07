@@ -48,4 +48,8 @@ npm install @mui/icons-material
 
 ```bash
 npm i react-redux redux redux-thunk @types/react-redux next-redux-wrapper
-```
+``` 
+Next redux wrapper 
+https://github.com/kirill-konshin/next-redux-wrapper 
+
+1h 48 mins 
