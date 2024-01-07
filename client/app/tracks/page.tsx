@@ -5,9 +5,15 @@ import { Card, Grid, Button, Box} from '@mui/material'
 import { useRouter } from 'next/navigation'
 import { ITrack } from '../types/track'
 import TrackList from '../compnents/TrackList'
+import { useTypedSelector } from '../hooks/useTypedSelector'
+import { useActions } from '../hooks/useActions'
 
 const page = () => {
   const router = useRouter()
+
+ // const {  } = useActions()
+
+  // const {  } = useTypedSelector(state => state.player)
 
   const tracks: ITrack[] = [
     {_id: '1',  name: 'Track 1', text: 'Track text 1', listens: 0, comments: [{ _id: '1', username: "Dimon", text: 'My comment' }], artist: "30 cent", picture: 'pic.png', audio: 'track.mp3' },
